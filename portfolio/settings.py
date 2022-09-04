@@ -1,4 +1,5 @@
 import dj_database_url
+import django_heroku
 import os
 from pathlib import Path
 
@@ -124,4 +125,4 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-djang0_heroku.settings(locals())
+django_heroku.settings(locals())
